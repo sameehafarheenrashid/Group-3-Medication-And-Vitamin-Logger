@@ -100,7 +100,8 @@ public class MainFrame extends JFrame {
     }
 
     private static class CloseAppDialog extends JDialog {
-        private int choice = -1;
+        private static final long serialVersionUID = 1L;
+		private int choice = -1;
 
         CloseAppDialog(Frame owner, boolean trayAvailable) {
             super(owner, "Close Application", ModalityType.APPLICATION_MODAL);
